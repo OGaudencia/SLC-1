@@ -1,0 +1,145 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="home.html" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	
+.nav li a
+{
+	float:left;
+	margin-top: 1rem;
+	margin-left:5rem;
+	
+	
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+	  margin-top:-5rem;
+	  margin-bottom:none;
+  }
+  .show {
+    display: block;
+}
+	.bg-2 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+	margin-top: 40px;
+	width:60%;
+
+}
+	  
+	.dropdown-menu
+	{
+		background-color: #337ab7;
+	}
+
+p 
+{
+	text-align:  left;
+	margin-left: 13.5rem;
+	font-size: 20px; 
+	font-family: 'Laila';
+}
+.container-fluid 
+{
+	height:70px;
+}
+h3 {
+	color: #337ab7;
+	font-size: 45px;
+	font-family: 'Laila';
+}
+.responsive {
+    width: 70%;
+    height: auto;
+}
+
+	</style>
+</head>
+<body>
+<div class="navbar">
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color: #337ab7; " href="home.html">Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav-center-left">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="outcome2.html">Outcomes
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li><a href="outcome1.html">outcome1</a></li>
+          <li><a href="outcome2.html">outcome2</a></li>
+          <li><a href="outcome3.html">outcome3</a></li>
+		  <li><a href="outcome4.html">outcome4</a></li>
+		  <li><a href="outcome5.html">outcome5</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+<div class="container text-center">
+  <h3>Network used for the internet</h3>
+   <h2><center>Installing DHCP server on Ubuntu Server 16.04</center> </h2>
+  <p>This was in open source class, with Curtis Gabrielson as the instructor. I used VM (Virtual Machine) to install the DHCP.
+	Examples of the steps that were included; I installed isc-dhcp-server package using the apt commands, and then I enabled the firewall, modifying the interfaces to specify which Ethernet interface to use. Lastly, I edited the dhcp/dhcp.d configuration files, adding the subnets, netmasks and IP ranges. 
+	What I learned from this lab is that an administrator can change the IP addresses of a larger number of system, they can also configure just one DHCP file on a server for new set of IP addresses instead of configuring the entire system. Being observant and thorough will help one avoid some of the minor and petty mistakes in the configuration files that can save time on that part.
+	The problem that I ran into is leaving my laptop Wi-Fi on which interfered with the bridged network and made it so I could not use putty to shh into my server. I may be a web developer but it is very important for me to know and understand how the network system works and how to troubleshoot these simple yet frustrating problems.
+</p>
+  </br>
+  <center><img src="img/dhcp.png" class="responsive"></center>
+  
+  </br> </br> </br>
+  
+  <h2><center>Installation, configuring and testing of Bind9 DNS server </center></h2>
+  <p>This also happened in Open source class with Curt as the instructor. The steps that I took included the installation of BIND9, as well as the configuration of the DNS forwarders, and then I configured the zone declarations, which specified the location of my db.example.com file and contains its zone information. The last step, which I found to be interesting, was the reverse lookup zone, the reason I found this interesting was that it holds the reverse IP and can search for them based off it. 
+	What I learned from this lab how networks allow for individual replacement of IP addresses of individual machines by a name, and how to associate multiple names to the same machine to update the different available services. The problem I faced during this lab was my isc-dhcp-server was not active at a point where it should have been and because of this, I could not resolve the hostname of my servers. 
+	Therefore, there was errors in the configuration file that I had to add the subnets and IP ranges. All I needed in this lab is to stay focused and motivated to finish the lab.
+	Once again, it is important to know how to implement a network properly and that it does not matter if you are a developer you should still know this.
+
+</p></br>
+<center>
+	 <img src="img/dns1.png" class="responsive">
+	 <img src="img/dns2.png" class="responsive">
+	 <img src="img/dns3.png" class="responsive">
+	 <img src="img/dns4.png" class="responsive">
+	 </center>
+</div>
+
+
+</body>
+<footer class="container-fluid text-center">
+  <p><center>Gaudencia Orenge Copyright</center></p>  
+  <form class="form-inline">Get Intouch:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-primary">Submit</button>
+  </form>
+</footer>
+
+</html>
